@@ -27,16 +27,12 @@
      <version>7</version>
   </parent>
   
-  <!--
-   <scm>
-        <connection>scm:git:git://staccatocommons.git.sourceforge.net/gitroot/staccatocommons/staccatocommons</connection>
-        <developerConnection>
-            scm:git:git://staccatocommons.git.sourceforge.net/gitroot/staccatocommons/staccatocommons
-        </developerConnection>
-        <url>http://staccatocommons.git.sourceforge.net/git/gitweb.cgi?p=staccatocommons/staccatocommons</url>
-    </scm> 
--->
- 
+	<scm>
+		 <connection>scm:git:https://github.com/staccatocommons/staccatissimo.git</connection>
+		 <developerConnection>scm:git:https://github.com/staccatocommons/staccatissimo.git</developerConnection>
+		 <url>https://github.com/staccatocommons/staccatissimo</url>
+	</scm> 
+
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    </properties>
