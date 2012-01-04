@@ -35,6 +35,7 @@
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <staccatissimo.version>1.3-SNAPSHOT</staccatissimo.version>
    </properties>
    
    <developers>
@@ -207,8 +208,8 @@
    </build>
    
    <modules>
-    <module>groovy-lang</module>
-    <module>groovy-control</module>
+    <module>legato-groovy-lang</module>
+    <module>legato-groovy-control</module>
   </modules>
    
   
