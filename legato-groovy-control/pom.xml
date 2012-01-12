@@ -1,26 +1,32 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>legato-groovy-parent-pom</artifactId>
-		<groupId>net.sf.staccatocommons</groupId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
-	<groupId>net.sf.staccatocommons</groupId>
-	<artifactId>legato-groovy-control</artifactId>
-	<name>Staccato-Commons-Legato-Groovy-Control</name>
-	<version>1.0-SNAPSHOT</version>
-	
-	<dependencies>
-		<dependency>
-			<groupId>net.sf.staccatocommons</groupId>
-			<artifactId>staccatissimo-control</artifactId>
-			<version>${staccatissimo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.staccatocommons</groupId>
-			<artifactId>legato-groovy-lang</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-	</dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <parent>
+      <artifactId>legato-groovy-parent-pom</artifactId>
+      <groupId>net.sf.staccatocommons</groupId>
+      <version>1.0-SNAPSHOT</version>
+   </parent>
+   <groupId>net.sf.staccatocommons</groupId>
+   <artifactId>legato-groovy-control</artifactId>
+   <name>Legato-Groovy-Control</name>
+   <version>1.0-SNAPSHOT</version>
+
+   <dependencies>
+      <dependency>
+         <groupId>net.sf.staccatocommons</groupId>
+         <artifactId>staccatissimo-control</artifactId>
+         <version>${staccatissimo.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>net.sf.staccatocommons</groupId>
+         <artifactId>legato-groovy-lang</artifactId>
+         <version>${project.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.8</version>
+      </dependency>
+   </dependencies>
 
 </project>
