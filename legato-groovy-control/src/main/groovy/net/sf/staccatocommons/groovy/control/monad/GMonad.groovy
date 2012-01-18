@@ -24,6 +24,7 @@
 package net.sf.staccatocommons.groovy.control.monad
 
 import net.sf.staccatocommons.control.monad.Monad
+import net.sf.staccatocommons.legato.lang.groovy.ClosureAwareCategory
 
 /**
  * @author flbulgarelli
@@ -32,6 +33,6 @@ import net.sf.staccatocommons.control.monad.Monad
 class GMonad {
 
   static def enableGlobally() {
-    Monad.mixin(GMonadCategory)
+    Monad.mixin(ClosureAwareCategory)
   }
 }

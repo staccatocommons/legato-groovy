@@ -24,8 +24,6 @@
 package net.sf.staccatocommons.groovy.collection.stream
 
 import net.sf.staccatocommons.collections.stream.Stream
-import net.sf.staccatocommons.legato.lang.groovy.GBlock
-import net.sf.staccatocommons.legato.lang.groovy.GFunction
 import net.sf.staccatocommons.legato.lang.groovy.GPredicate
 
 /**
@@ -34,39 +32,6 @@ import net.sf.staccatocommons.legato.lang.groovy.GPredicate
  */
 @Category(Stream)
 class GStreamCategory {
-
-  Stream map(Closure closure) {
-    map GFunction.from(closure)
-  }
-
-  Stream filter(Closure closure) {
-    filter GPredicate.from(closure)
-  }
-
-  Stream incorporate(Closure closure) {
-    incorporate GFunction.from(closure)
-  }
-
-  Stream each(Closure closure) {
-    each GBlock.from(closure)
-  }
-
-  Stream all(Closure closure) {
-    all GBlock.from(closure)
-  }
-
-  Stream any(Closure closure) {
-    all GBlock.from(closure)
-  }
-
-  void forEach(Closure closure) {
-    forEach GBlock.from(closure)
-  }
-
-
-  Stream flatMap(Closure closure) {
-    flatMap GFunction.from(closure)
-  }
 
   //GDK integration
 
@@ -80,6 +45,10 @@ class GStreamCategory {
 
   Stream every(Closure closure) {
     all closure
+  }
+
+  Stream any(Closure closure) {
+    any GPredicate.from(closure)
   }
 
   def asType(Class clazz) {

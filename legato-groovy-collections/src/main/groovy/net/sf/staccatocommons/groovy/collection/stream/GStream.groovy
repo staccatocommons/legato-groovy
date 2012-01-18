@@ -24,6 +24,7 @@
 package net.sf.staccatocommons.groovy.collection.stream
 
 import net.sf.staccatocommons.collections.stream.Stream
+import net.sf.staccatocommons.legato.lang.groovy.ClosureAwareCategory
 
 /**
  * @author flbulgarelli
@@ -33,6 +34,7 @@ class GStream {
 
   static def enableGlobally() {
     Stream.mixin(GStreamCategory)
+    Stream.mixin(ClosureAwareCategory)
     Object.mixin(GStreamConvertionCategory)
   }
 }
