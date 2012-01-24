@@ -50,8 +50,8 @@ class ClosureAwareCategory {
     if(args.size() != 1 || !(closure instanceof Closure))
       throw missingMethod()
 
-    def targetType = this.class.methods.find { it ->
-      it.name == name && it.parameterTypes.size() == 1
+    def targetType = this.respondsTo(name).find {
+      it.parameterTypes.size() == 1
     }?.parameterTypes?.find()
     if(!targetType)
       throw missingMethod()

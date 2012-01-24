@@ -34,3 +34,4 @@ class GMonads extends Monads {
     GMonad.enableGlobally()
   }
 }
+
